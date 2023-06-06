@@ -50,7 +50,7 @@ opti_gen = optim.Adam(gen.parameters(),lr = lr,betas=(0.0,0.9))
 
 #fixed noise
 
-fixed_noise = torch.randn((batch_size,z_dim,1,1))
+fixed_noise = torch.randn((32,z_dim,1,1))
 
 writer_fake = SummaryWriter(f"logs/fake")
 writer_real = SummaryWriter(f"logs/real")
